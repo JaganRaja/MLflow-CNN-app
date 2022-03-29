@@ -36,9 +36,15 @@ pip install -r requirements.txt
 conda env export > conda.yaml
 ```
 
-### STEP 06- commit and push the changes to the remote repository
+### STEP 06 - to run init_setup.sh(to run all commands through single (shell)script file)
 
-### STEP 07 - to create an environemnt using conda.yaml file
+```bash
+bash init_setup.sh
+```
+
+### STEP 07- commit and push the changes to the remote repository
+
+### STEP 08 - to create an environemnt using conda.yaml file
 
 ```bash
 conda env create -f conda.yaml

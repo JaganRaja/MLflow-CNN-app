@@ -7,18 +7,18 @@ from src.utils.common import read_yaml, create_directories
 import random
 
 
-STAGE = "STAGE_NAME" ## <<< change stage name 
+STAGE = "TEMPLATE"  # <<< change stage name
 
 logging.basicConfig(
-    filename=os.path.join("logs", 'running_logs.log'), 
-    level=logging.INFO, 
+    filename=os.path.join("logs", 'running_logs.log'),
+    level=logging.INFO,
     format="[%(asctime)s: %(levelname)s: %(module)s]: %(message)s",
     filemode="a"
-    )
+)
 
 
 def main(config_path, params_path):
-    ## read config files
+    # read config files
     config = read_yaml(config_path)
     params = read_yaml(params_path)
     pass
