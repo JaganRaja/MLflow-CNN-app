@@ -145,3 +145,8 @@ data.zip
 
 #logs
 logs/running_logs.log
+
+#extracted data
+data/PetImages/
+
+data/

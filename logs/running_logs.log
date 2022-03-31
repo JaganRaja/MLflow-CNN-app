@@ -42,3 +42,14 @@ TypeError: main() missing 1 required positional argument: 'params_path'
 [2022-03-29 09:43:39,837: INFO: stage_01_get_data]: filename:data.zip is already present!
 [2022-03-29 09:43:39,837: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
 
+[2022-03-31 14:01:53,776: INFO: stage_01_get_data]: 
+********************
+[2022-03-31 14:01:53,839: INFO: stage_01_get_data]: >>>>> stage GET_DATA started <<<<<
+[2022-03-31 14:01:53,841: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-03-31 14:01:53,874: INFO: common]: created directory at: data
+[2022-03-31 14:01:53,875: INFO: stage_01_get_data]: filename:data.zip is already present!
+[2022-03-31 14:01:53,875: INFO: common]: created directory at: data
+[2022-03-31 14:01:53,875: INFO: common]: extraction started..!
+[2022-03-31 14:04:53,895: INFO: common]: extracted data\data.zip to data
+[2022-03-31 14:04:53,913: INFO: stage_01_get_data]: >>>>> stage GET_DATA completed!<<<<<
+
