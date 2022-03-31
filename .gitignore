@@ -149,4 +149,7 @@ logs/running_logs.log
 #extracted data
 data/PetImages/
 
-data/
+data/bad_data
+data/MSR-LA - 3467.docx
+data/readme*.txt
+
