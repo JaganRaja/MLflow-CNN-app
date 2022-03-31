@@ -35,3 +35,4 @@ def validate_image(config: dict) -> None:
                 bad_data_path = os.path.join(BAD_DATA_DIR, imgs)
                 shutil.move(path_to_img, bad_data_path)
                 logging.info(f"moved bad file from {path_to_img} to {bad_data_path}")
+                logging.exception(e)
