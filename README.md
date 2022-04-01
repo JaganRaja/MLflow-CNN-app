@@ -50,13 +50,17 @@ bash init_setup.sh
 conda env create -f conda.yaml
 ```
 
-### to run mlflow (--no-conda --> dont want new conda environment)
+## MLFlow commands
+
+### command to run MLproject file (--no-conda --> dont want new conda environment)
 
 ```bash
 mlflow run . --no-conda
 ```
 
 ### mlflow - to want to run a specific stage(here get_data is the stage i want to run)
+
+### run any sepecific entry point in MLproject file
 
 ```bash
 mlflow run . -e get_data --no-conda
@@ -65,10 +69,10 @@ mlflow run . -e get_data --no-conda
 ### mlflow - to want to run a specific stage(here get_data is the stage i want to run) and passing different config paramters
 
 ```bash
-mlflow run . -e get_data -P config=config/config2.yaml --no-conda
+mlflow run . -e get_data -P config=config/your_config.yaml --no-conda
 ```
 
-### to delete a file(ex:data/model/init_model.h5) which already present in git
+### to delete a file(ex:data/model/init_model.h5) which is already present in git
 
 ```bash
 git rm -f data/model/init_model.h5
