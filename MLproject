@@ -9,7 +9,7 @@ entry_points:
 
   #stage-01
   get_data: 
-    # stage_01_get_data.py file expects configuartion file, so we need to define it as parameters
+    # stage_01_get_data.py file expects configuartion file, so we need to define it as parameters.similarly for other stages
     parameters:
       config: {type: str, default: "configs/config.yaml"}
     command: "python src/stage_01_get_data.py --config={config}"  
@@ -17,9 +17,16 @@ entry_points:
 
   # stage-02
   base_model_creation:
-    # stage_02_base_model_creation.py file expects configuartion file, so we need to define it as parameters
     parameters:
       config: {type: str, default: "configs/config.yaml"}
     command: "python src/stage_02_base_model_creation.py --config={config}" 
-    #--config={config}.. it will take above line config parameters
+  
+
+  # stage-03 - callbacks
+  
+  # stage-04
+  training:
+    parameters:
+      config: {type: str, default: "configs/config.yaml"}
+    command: "python src/stage_04_train.py --config={config}" 
     

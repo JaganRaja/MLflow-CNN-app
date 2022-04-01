@@ -29,6 +29,7 @@ def main():
         mlflow.run(".", "base_model_creation", use_conda=False)
         # we can pass the parameters through mlflow.run
         # mlflow.run(".", "base_model_creation", parameters={key: value pair}, use_conda=False)
+        mlflow.run(".", "training", use_conda=False)
 
 if __name__ == '__main__':
 
